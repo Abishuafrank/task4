@@ -171,6 +171,21 @@ header {
     border: none;
 }
 
+
+footer {
+    background-color: #053229;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+    text-wrap-style: wrap;
+    position: relative;
+}
+
+footer:hover {
+    background-color: #03211b;
+    color: greenyellow;
+}
 .cta-btn1:hover {
     color: #094136;
 }
@@ -214,12 +229,6 @@ header {
 
 }
 
-.flex-container1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
 
 @media (max-width: 420px){
    header {
