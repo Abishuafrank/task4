@@ -1,0 +1,276 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #053229;
+}
+
+.nav-items {
+    display: flex;
+    gap: 12px;
+}
+
+.nav-items a:hover {
+    color: rgb(101, 133, 148);
+    text-decoration: underline;
+}
+
+.nav-items a {
+    color: burlywood;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 15px;
+    color: green;
+    padding: 7px;
+}
+
+.logo1{
+    font-size: 15px;
+    border-radius: 10px;
+    align-items: start;
+    padding: 7px;
+    margin-right: 5px;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    background: #094136;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    animation: slidefromTop 2s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-shadow: 2px 2px 4px greenyellow;
+}
+
+.hero p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0,3);
+}
+
+.hero .cta-btn {
+    background-color: rgb(64, 98, 13);
+    color: white;
+    border: none;
+    padding: 20px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 1s;
+}
+
+.hero .cta-btn:hover {
+    background-color: #0a8970;
+    color: rgb(84, 10, 61);
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #053229;
+}
+
+.flex-container-title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    text-shadow: 2px 2px 4px greenyellow;
+}
+
+.flex-container-title:hover {
+    color: #21b799;
+}
+
+.card {
+    background-color: #21b799;
+    overflow: hidden;
+    color: whitesmoke;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 10px;;
+    width: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    
+}
+
+.card:hover {
+    background-color:black;
+    text-decoration: none;
+    color: burlywood;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 4px greenyellow;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+.card h2:hover {
+    color: rgb(101, 133, 148);
+    text-decoration: unset;
+}
+
+.card p {
+    font-size: 1em;
+    color: white;
+    font-size: medium-large;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card p:hover {
+    color: #76aaa0;
+}
+
+.cta-btn {
+    font-size: large;
+    color: #21b799;
+}
+
+.cta-btn:hover {
+    background: greenyellow;
+    color: #053229
+}
+
+.cta-btn1 {
+    
+    color: #76aaa0;
+    background: transparent;
+    border: none;
+}
+
+.cta-btn1:hover {
+    color: #094136;
+}
+
+@media (max-width: 1200px){
+    header {
+        justify-content: space-between ;
+        padding: 20px;
+        align-items: column;
+    }
+
+    .nav-items {
+        flex-direction: row;
+        align-items: 5px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .hero p {
+        font-size: 2em;
+        
+    }
+
+    .hero .cta-btn {
+        padding: 20px 10px;
+        font-size: 2rem;
+        cursor: pointer;
+        border-radius: 200px;
+    }
+
+}
+
+.flex-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 420px){
+   header {
+        justify-content: column;
+        padding: 20px;
+        align-items: column;
+    }
+
+    .nav-items {
+        flex-direction: row;
+        align-items: 5px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .hero p {
+        font-size: 1em;
+        
+    }
+
+    .hero .cta-btn {
+        padding: 20px 10px;
+        font-size: 1rem;
+        border-radius: 200px;
+    }
+}
+
+@keyframes slidefromTop {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
